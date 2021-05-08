@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "kingubot"
+name = "kinguserbot"
 version = "0.4.7"
 description = "Script for generating Telegram Session in telethon or pyrogram"
 authors = ["apisuserbot <nafisqurtubi154@gmail.com>"]
