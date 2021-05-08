@@ -26,7 +26,7 @@ tutor = """
 """
 
 template = """
-Grup Support : @KingUserbotSupoort 
+Grup Support : @KingUserbotSupport 
             
 <code>STRING_SESSION</code>: <code>{}</code>
 
@@ -47,7 +47,7 @@ while select != ("p", "t"):
         with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
             session_string = client.session.save()
             saved_messages_template = "#TelethonSession" + template.format(session_string)
-            print("\nMengirim string session...\n")
+            print("\nMengirim String Session...\n")
             client.send_message("me", saved_messages_template, parse_mode="html")
             time.sleep(1)
             print("STRING_SESSION berhasil cek di pesan tersimpan mu")
@@ -59,13 +59,13 @@ while select != ("p", "t"):
         print(tutor)
         with Client(
         "UserBot", 
-        api_id=int(input("Enter API ID: ")),
-        api_hash=input("Enter API HASH: ")) as pyrogram:
+        api_id=int(input("MASUKAN API KEY: ")),
+        api_hash=input("MASUKAN API HASH: ")) as pyrogram:
             saved_messages_template = "Pyrogram session" + template.format(pyrogram.export_session_string())
-            print("\nGenerating String session...\n")           
+            print("\nMengirim String Session...\n")           
             pyrogram.send_message("me", saved_messages_template, parse_mode="html")
             time.sleep(1) 
-            print("Your STRING_SESSION value have been sent to your Telegram Saved Messages")
+            print("STRING_SESSION berhasil cek di pesan tersimpanmu")
         break
     
     else:
