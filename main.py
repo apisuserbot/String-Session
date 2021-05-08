@@ -26,7 +26,7 @@ tutor = """
 """
 
 template = """
-Terimakasih sudah support 👑 𝗞𝗶𝗻𝗴-𝙐𝘽𝙊𝙏 👑 
+Grup Support : @KingUserbotSupoort 
             
 <code>STRING_SESSION</code>: <code>{}</code>
 
@@ -46,7 +46,7 @@ while select != ("p", "t"):
 
         with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
             session_string = client.session.save()
-            saved_messages_template = "Telethon session" + template.format(session_string)
+            saved_messages_template = "#TelethonSession" + template.format(session_string)
             print("\nMengirim string session...\n")
             client.send_message("me", saved_messages_template, parse_mode="html")
             time.sleep(1)
