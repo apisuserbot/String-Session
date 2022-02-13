@@ -30,7 +30,7 @@ Grup Support : @UserbotTelegramSupport
             
 <code>STRING_SESSION</code> : <code>{}</code>
 
-⚠️ <b>Gunakan string session dengan hati hati karena kalau ada masalah kami tidak bertanggung jawab</b>"""
+⚠️ <b>Gunakan String Session dengan hati hati karena kalau ada masalah kami tidak bertanggung jawab</b>"""
 
 
 print(docs)
