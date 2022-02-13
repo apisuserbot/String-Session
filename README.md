@@ -1,2 +1,2 @@
 # String-Session
-String Session King
+String Session For Userbot Telegram
